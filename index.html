@@ -14,7 +14,7 @@
 
     <p>
         天道崩塌，我陈平安唯有一剑，<br>
-        可搬山，断江，倒海，降妖，
+        可搬山，断江，倒海，降妖，<br>
         除魔，敕神，摘星，摧城，开天，<br>
         剑来！
     </p>
@@ -64,6 +64,11 @@
     <br>
 
     <script>
+
+        function test(test){      // 定义函数
+            alert(test);
+        }
+
         const p1 = document.createElement("p");    // 页面输出
         p1.textContent = "穷逼！！！";
         document.body.appendChild(p1);
@@ -86,7 +91,12 @@
         p3.textContent = "你的余额为：" + sum;
         document.body.appendChild(p3);
 
+        
+
         console.log(sum);    // 日志输出
     </script>
+
+    <input type="button" vlue="点我！！！" onclick="test('依然穷逼！！！')"/>
+
 </body>
 </html>
