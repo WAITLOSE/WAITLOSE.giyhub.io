@@ -64,23 +64,29 @@
     <br>
 
     <script>
-        const p = document.createElement("p");    // 页面输出
-        p.textContent = "Hello World!";
-        document.body.appendChild(p);
+        const p1 = document.createElement("p");    // 页面输出
+        p1.textContent = "穷逼！！！";
+        document.body.appendChild(p1);
 
-        alert("弹窗");    // 弹窗输出
+        alert("穷逼！！！");    // 弹窗输出
+
+        var conut = prompt("请输入你的银行账户");
+        var keyWord = prompt("请输入你的银行卡密码");
+
+        const p2 = document.createElement("p");
+        p2.textContent = "账户：" + conut + "\n" + "密码：" + keyWord;
+        document.body.appendChild(p2);
 
         // prompt可实现弹窗输入
-        var x = parseInt(prompt("请输入一个数字"));    // 声明变量  // parseInt将数据类型转换为数字类型如：
-        var y = parseInt(prompt("请输入一个数字"));    // parseInt,parseFloat
-        var sum = x + y;
+        var x = parseInt(prompt("请输入你的余额"));    // 声明变量  // parseInt将数据类型转换为数字类型如：
+        var y = parseInt(prompt("请输入你想要的余额"));    // parseInt,parseFloat
+        var sum = x - y;
 
-        const p1 = document.createElement("p");
-        p1.textContent = sum;
-        document.body.appendChild(p1);
+        const p3 = document.createElement("p");
+        p3.textContent = "你的余额为：" + sum;
+        document.body.appendChild(p3);
 
         console.log(sum);    // 日志输出
     </script>
-    
 </body>
 </html>
