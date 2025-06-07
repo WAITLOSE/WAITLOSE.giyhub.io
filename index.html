@@ -14,14 +14,16 @@
 
     <p>
         天道崩塌，我陈平安唯有一剑，<br>
-        可搬山，断江，倒海，降妖，<br>
+        可搬山，断江，倒海，降妖，
         除魔，敕神，摘星，摧城，开天，<br>
         剑来！
+    </p>
+
     <p>    <!--段落标签-->
         烈星随旋，日月递炤，四时代御，阴阳大化，风雨博施，万物各得其和以生，各得其养以成，<br>
         不公天道，吾自立身，不朽不鸣，八荒春风，春风已至，不见静春。<br>
         天下有我齐静春，天下快哉，我亦快哉！
-    </br>
+    </p>
 
     <table border="1" width="400px" hight="'200px">
         <thead> <!--表头标签-->
@@ -56,8 +58,28 @@
     </ul>
 
     <img src="JianLai.jpg" width="503" height="307" />    <!--图像标签，图像的名称和尺寸是以属性的形式提供的-->
+    <br>
 
-    <a  href="https://blog.csdn.net/qq_66759927?spm=1000.2115.3001.5343">酷猫的主页</a>    <!--通过<a>定义链接-->
+    <a  href="https://blog.csdn.net/qq_66759927?spm=1000.2115.3001.5343">酷猫的主页</a>   <!--通过<a>定义链接-->
+    <br>
+
+    <script>
+        const p = document.createElement("p");    // 页面输出
+        p.textContent = "Hello World!";
+        document.body.appendChild(p);
+
+        alert("弹窗");    // 弹窗输出
+
+        var x = 2;    // 声明变量
+        var y = 3;
+        var sum = x + y;
+
+        const p1 = document.createElement("p");
+        p1.textContent = sum;
+        document.body.appendChild(p1);
+
+        console.log(sum);    // 日志输出
+    </script>
     
 </body>
 </html>
