@@ -13,7 +13,7 @@
     </h1>
 
     <p>
-        天道崩塌，我陈平安唯有一剑，<br>
+        天道崩塌，我陈平安唯有一剑，<br>   <!--换行标签-->
         可搬山，断江，倒海，降妖，<br>
         除魔，敕神，摘星，摧城，开天，<br>
         剑来！
@@ -57,45 +57,15 @@
         <li>青萍剑</li>
     </ul>
 
-    <img src="JianLai.jpg" width="503" height="307" />    <!--图像标签，图像的名称和尺寸是以属性的形式提供的-->
+    <img src="image\JianLai.jpg" width="503" height="307" />    <!--图像标签，图像的名称和尺寸是以属性的形式提供的-->
     <br>
 
     <a  href="https://blog.csdn.net/qq_66759927?spm=1000.2115.3001.5343">酷猫的主页</a>   <!--通过<a>定义链接-->
     <br>
 
-    <script>
+    <script src="main.js"></script>
 
-        function test(test){      // 定义函数
-            alert(test);
-        }
-
-        const p1 = document.createElement("p");    // 页面输出
-        p1.textContent = "穷逼！！！";
-        document.body.appendChild(p1);
-
-        alert("穷逼！！！");    // 弹窗输出
-
-        var conut = prompt("请输入你的银行账户");
-        var keyWord = prompt("请输入你的银行卡密码");
-
-        const p2 = document.createElement("p");
-        p2.textContent = "账户：" + conut + "\n" + "密码：" + keyWord;
-        document.body.appendChild(p2);
-
-        // prompt可实现弹窗输入
-        var x = parseInt(prompt("请输入你的余额"));    // 声明变量  // parseInt将数据类型转换为数字类型如：
-        var y = parseInt(prompt("请输入你想要的余额"));    // parseInt,parseFloat
-        var sum = x - y;
-
-        const p3 = document.createElement("p");
-        p3.textContent = "你的余额为：" + sum;
-        document.body.appendChild(p3);
-
-      
-        console.log(sum);    // 日志输出
-    </script>
-
-    <button style="width: 100px; height: 50px;" onclick="test('依然穷逼！！！')">点我</button>
+    <button style="width: 100px; height: 50px;" onclick="test('依然穷逼！！！')">点我</button>    <!--按钮组件，事件监听-->
 
 </body>
 </html>
