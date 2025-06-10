@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!--veiwport是设备的屏幕上能用来显示我们的网页的那一块区域，
     content设置可视区和设备宽度等宽，并设置初始缩放为不缩放-->
     <title>隐官二掌柜</title>    <!--元素描述了文档的标题-->
+
+    
 <style>
+
     body{
         background-image:url("background.jpg");
         background-repeat:no-repeat;
@@ -13,31 +16,42 @@
         background-position:center;
         background-attachment: fixed;
     }
-   h1{
+
+    h1{
       text-align:center;
-}
-h3{
-    text-align:center;
-}
-p{
-text-align:center;
-}
-table{
-text-align:center;
-}
-ul{
-text-align:center;
-}
-img{
-text-align:center;
-}
-a{
-text-align:center;
-}
-button{
-text-align:center;
-}
+    }
+
+    h3{
+      text-align:center;
+    }
+
+    p{
+      text-align:center; 
+    }
+
+    table{
+      margin: 0 auto;
+      text-align:center;
+    }
+
+    ul{
+      display:contents;
+      justify-content: center;
+      margin: 0 auto;
+      text-align:center;
+    }
+
+    a{
+      display: flex;
+      justify-content: center;
+      text-align:center;
+    }
+
+    button{
+      text-align:center;
+    }
 </style>
+
 </head>
 <body>     <!--元素包含了可见的页面内容-->
 
@@ -54,15 +68,34 @@ text-align:center;
     </p>
 
     <p>    <!--段落标签-->
-        烈星随旋，日月递炤，四时代御，阴阳大化，风雨博施，万物各得其和以生，各得其养以成，<br>
-        不公天道，吾自立身，不朽不鸣，八荒春风，春风已至，不见静春。<br>
+        烈星随旋，日月递炤，<br>
+        四时代御，阴阳大化，风雨博施，<br>
+        万物各得其和以生，各得其养以成，<br>
+        不公天道，吾自立身，<br>
+        不朽不鸣，八荒春风，<br>
+        春风已至，不见静春。<br>
         天下有我齐静春，天下快哉，我亦快哉！
     </p>
 
-<p>
-让花成花，树成树。<br>
-我志愿成为一名人民教师，<br>忠诚党的教育事业，<br>遵守教育法律法规，<br>履行教书育人职责，<br>引领学生健康成长，<br>做到有理想信念、<br>有道德情操、<br>有扎实学识、<br>有仁爱之心，<br>为教育发展、<br>国家繁荣和民族振兴努力奋斗！<br>
-</p>
+    <p>
+        <span style="background-color:aqua;">
+        让花成花，树成树。
+        </span>
+    </p>
+
+    <p>
+        我志愿成为一名人民教师，<br>
+        忠诚党的教育事业，<br>
+        遵守教育法律法规，<br>
+        履行教书育人职责，<br>
+        引领学生健康成长，<br>
+        做到有理想信念、<br>
+        有道德情操、<br>
+        有扎实学识、<br>
+        有仁爱之心，<br>
+        为教育发展、<br>
+        国家繁荣和民族振兴努力奋斗！
+   </p>
 
     <table border="1" width="400px" hight="'200px">
         <thead> <!--表头标签-->
@@ -95,8 +128,9 @@ text-align:center;
         <li>笼中雀</li>
         <li>青萍剑</li>
     </ul>
+    <br>
 
-    <img src="JianLai.jpg" width="400" height="244" />    <!--图像标签，图像的名称和尺寸是以属性的形式提供的-->
+    <img src="JianLai.jpg" width="400" height="244" style="display: block;margin: 0 auto;"/>    <!--图像标签，图像的名称和尺寸是以属性的形式提供的-->
     <br>
 
     <a  href="https://blog.csdn.net/qq_66759927?spm=1000.2115.3001.5343">酷猫的主页</a>   <!--通过<a>定义链接-->
@@ -104,7 +138,7 @@ text-align:center;
 
     <script src="main.js"></script>
 
-    <button style="width: 100px; height: 50px;" onclick="test('依然穷逼！！！')">点我</button>    <!--按钮组件，事件监听-->
+    <button style="width: 100px; height: 50px; display: block; margin: 0 auto;" onclick="test('依然穷逼！！！')">点我</button>    <!--按钮组件，事件监听-->
 
 </body>
 </html>
